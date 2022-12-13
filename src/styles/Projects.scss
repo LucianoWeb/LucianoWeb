@@ -1,0 +1,141 @@
+@use '/colors' as c;
+
+.cont-pro {
+    padding: 2rem;
+background:linear-gradient(to bottom, rgb(20, 20, 20), c.$dark);
+    @media(max-width:1080px) {
+        padding: 0;
+    }
+
+    @media(max-width:768px) {
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 6rem;
+        letter-spacing: 10px;
+        font-weight: 900;
+        text-align: center;
+        padding: 7rem;
+        color: c.$white;
+        text-shadow: 0 0 2px c.$white;
+        @media (max-width:1080px) {
+            letter-spacing: 10px;
+            padding: 5rem;
+        }
+
+        @media(max-width:768px) {
+            font-size: 2rem;
+            letter-spacing: 3px;
+            -webkit-text-stroke: 0px ;
+    
+        }
+    }
+}
+
+.proyects {
+    padding: 6rem;
+    margin: 0 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    border: 2px solid c.$white;
+    box-shadow: 1px 8px 8px white;
+    border-radius: 25px;
+    background: linear-gradient(rgba(0, 0, 0, 0.811), rgba(0, 0, 0, 0.142)), url(../assets/bgpro.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    @media(max-width:1080px) {
+        margin: 2rem;
+        gap: 2rem;
+    }
+    @media(max-width: 768px) {
+        padding: 2rem;
+       margin: 0 4rem;
+       background: c.$bubble1;
+        flex-direction: column;
+        gap: 2rem;
+        box-shadow: none;
+    }
+}
+
+.box-pro {
+    position: relative;
+    width: 230px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 1rem;
+
+    @media(max-width:1080px) {
+        width: 200px;
+        height: 250px;
+    }
+
+    &:hover {
+        box-shadow: 0 0 5px c.$white;
+        transition: .3s;
+        transform: scale(1.02);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 160%;
+        background: linear-gradient(#02a9f1, c.$secondary);
+        animation: ani 15s linear infinite;
+    }
+
+    &::after {
+        content: '';
+        background: c.$dark;
+        position: absolute;
+        inset: 4px;
+        border-radius: 16px;
+        background-size: cover;
+    }
+
+    h4 {
+        position: relative;
+        z-index: 100;
+        text-align: center;
+        color: c.$white;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 2rem;
+        background-color: c.$bubble1;
+        border-radius: 5px;
+        padding: .5rem;
+        @media (max-width:768px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    img {
+        position: relative;
+        z-index: 100;
+        margin: 2rem auto;
+        width: 5rem;
+        @media (max-width:768px) {
+            width: 3.5rem;
+        }
+    }
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

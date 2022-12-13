@@ -1,0 +1,123 @@
+@use '/colors' as c;
+
+.cont-know {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, c.$dark, rgb(20, 20, 20));
+
+    @media(max-width:1080px) {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    @media(max-width:768px) {
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 6rem;
+        letter-spacing: 10px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 4rem;
+        padding: 5rem 5rem 2rem 5rem;
+        color: c.$white;
+        text-shadow: 0 0 2px c.$white;
+        @media(max-width:1080px){
+            font-size: 3rem;
+        }
+    @media(max-width:768px) {
+        font-size: 2rem;
+        padding: 2rem;
+        margin: 1rem .5rem;
+        margin-bottom: 3rem;
+        letter-spacing: 5px;
+        
+    }
+    }
+
+}
+
+
+.know-flex {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+
+    gap: 5rem;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, c.$bubble1, c.$dark);
+    padding: 2rem ;
+    margin: 0 3rem;
+    border: 7px solid c.$white;
+    @media(max-width:1080px){
+       
+        border: 3px solid c.$white;
+        border-radius: 0px;
+        overflow: hidden;
+        gap: 2rem;
+    }
+    @media(max-width:768px){
+        grid-template-columns: repeat(1,1fr);
+        border: 3px solid c.$white;
+        border-radius: 0px;
+        overflow: hidden;
+        gap: .5rem;
+    }
+
+    .skills {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+      @media (max-width:768px) {
+        gap: 1rem;
+      }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background-color: c.$dark;
+            padding: .7rem;
+            border: 2px solid c.$secondary;
+            border-radius: 5px;
+            user-select: none;
+            &:hover {
+    
+                box-shadow: 0 0 10px c.$white;
+                transition: .3s;
+     
+        
+            }
+
+            img {
+                height: 5rem;
+                @media (max-width:768px) {
+                    height: 4rem;
+                }
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: c.$white;
+                font-weight: 700;
+                letter-spacing: 2px;
+                padding: .2rem;
+              
+            }
+        }
+
+    }
+
+}
+
+.knowimg {
+    height: 30rem;
+    
+    @media(max-width:1080px){
+       display: none;
+    }
+}

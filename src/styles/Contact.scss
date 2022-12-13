@@ -1,0 +1,83 @@
+@use '/colors' as c;
+.cont-contact{
+    padding-top: 5rem;
+    
+    .logos-contact{
+       display: flex;
+       justify-content: center;
+       padding: 4rem;
+       background-color: black;
+       gap: 5rem;
+     @media (max-width:768px) {
+        flex-wrap: wrap;
+     }
+      .linked{
+        height: 4.5rem;
+        width: 4.5rem;
+        color: #0a66c2;
+        &:hover{
+            filter: drop-shadow(0 0 10px #0a66c2);
+            transition: .3s;
+            transform: scale(1.1);
+        }
+        
+      }
+      .github{
+        height: 4.5rem;
+        width: 4.5rem;
+        color: white;
+        &:hover{
+            filter: drop-shadow(0 0 10px white);
+            transition: .3s;
+            transform: scale(1.1);
+        }
+      }
+      .insta{
+        height: 4.5rem;
+        width: 4.5rem;
+        color: #da01c0;
+        &:hover{
+            filter: drop-shadow(0 0 10px #9900ff);
+            transition: .3s;
+            transform: scale(1.1);
+        }
+      }
+      .what{
+        height: 4.5rem;
+        width: 4.5rem;
+        color: #03c100;
+        &:hover{
+            filter: drop-shadow(0 0 10px #03c100);
+            transition: .3s;
+            transform: scale(1.1);
+        }
+      }
+       
+       
+    }
+    
+    h4 {
+        font-size: 4rem;
+        letter-spacing: 10px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 5rem 5rem 2rem 5rem;
+        color: c.$white;
+        text-shadow: 0 0 2px c.$white;
+
+        @media (max-width:1080px) {
+            font-size: 5rem;
+            letter-spacing: 10px;
+        }
+
+        @media(max-width:768px) {
+            font-size: 2rem;
+            padding: 2rem;
+            margin: 0 .5rem;
+            letter-spacing: 3px;
+        
+
+        }
+    }
+}

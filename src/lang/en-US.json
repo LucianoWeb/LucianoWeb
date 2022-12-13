@@ -1,0 +1,16 @@
+{
+    "header.about" : "About me",
+    "header.aboutp":"Hello, my name is Luciano! Relatively recently I discovered the world of web programming and I was passionate about it. I have been studying this profession for approximately a year without rest. I am constant, hard-working, disciplined, I like to learn new things and I learn quickly. I have no work experience in this sector, but I think I am qualified to start a new path in my life.",
+
+    "nav-pro" :"Projects",
+    "nav-pro2" :"Projects",
+    "nav-know" :"Knowledge",
+    "nav-know2" :"Knowledge",
+    "nav-cont" :"Contact",
+    "nav-cont2" :"Contact",
+
+    "know" :"Knowledge",
+    "pro" :"Projects",
+    "cont" : "Find me on:"
+    
+}

@@ -1,0 +1,249 @@
+@use '/colors' as c;
+.background{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    @media (max-width:768px){
+        min-height: 165vh;
+    }
+}
+
+
+.bubbles{
+    position: relative;
+    display: flex;
+    span{
+        position: relative;
+        width: 15px;
+        height: 15px;
+        background: c.$primary;
+        margin: 0 4px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px c.$bubble1,
+        0 0 25px c.$primary,
+        0 0 50px c.$primary;
+        animation: animate 15s linear infinite;
+        &:nth-child(even){
+            background-color: c.$secondary;
+            box-shadow:  0 0 0 5px c.$bubble2,
+            0 0 25px c.$secondary,
+            0 0 50px c.$secondary
+        }
+    }
+}
+
+.bubbles span:nth-child(1){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(2){
+    animation-duration: 15s;
+}
+.bubbles span:nth-child(3){
+    animation-duration: 25s;
+}
+.bubbles span:nth-child(4){
+    animation-duration: 8s;
+}
+.bubbles span:nth-child(5){
+    animation-duration: 12s;
+}
+.bubbles span:nth-child(6){
+    animation-duration: 7s;
+}
+.bubbles span:nth-child(7){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(8){
+    animation-duration: 3s;
+}
+.bubbles span:nth-child(9){
+    animation-duration: 13s;
+}
+.bubbles span:nth-child(10){
+    animation-duration: 6s;
+}
+.bubbles span:nth-child(11){
+    animation-duration: 9s;
+}
+.bubbles span:nth-child(12){
+    animation-duration: 14s;
+}
+.bubbles span:nth-child(13){
+    animation-duration: 7s;
+}
+.bubbles span:nth-child(14){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(15){
+    animation-duration: 4s;
+}
+.bubbles span:nth-child(16){
+    animation-duration: 8s;
+}
+.bubbles span:nth-child(17){
+    animation-duration: 13s;
+}
+.bubbles span:nth-child(18){
+    animation-duration: 6s;
+}
+.bubbles span:nth-child(19){
+    animation-duration: 9s;
+}
+.bubbles span:nth-child(20){
+    animation-duration: 4s;
+}
+.bubbles span:nth-child(21){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(22){
+    animation-duration: 15s;
+}
+.bubbles span:nth-child(23){
+    animation-duration: 25s;
+}
+.bubbles span:nth-child(24){
+    animation-duration: 8s;
+}
+.bubbles span:nth-child(25){
+    animation-duration: 12s;
+}
+.bubbles span:nth-child(26){
+    animation-duration: 7s;
+}
+.bubbles span:nth-child(27){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(28){
+    animation-duration: 3s;
+}
+.bubbles span:nth-child(29){
+    animation-duration: 13s;
+}
+.bubbles span:nth-child(30){
+    animation-duration: 6s;
+}
+.bubbles span:nth-child(31){
+    animation-duration: 9s;
+}
+.bubbles span:nth-child(32){
+    animation-duration: 14s;
+}
+.bubbles span:nth-child(33){
+    animation-duration: 7s;
+}
+.bubbles span:nth-child(34){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(35){
+    animation-duration: 4s;
+}
+.bubbles span:nth-child(36){
+    animation-duration: 8s;
+}
+.bubbles span:nth-child(37){
+    animation-duration: 13s;
+}
+.bubbles span:nth-child(38){
+    animation-duration: 6s;
+}
+.bubbles span:nth-child(39){
+    animation-duration: 9s;
+}
+.bubbles span:nth-child(40){
+    animation-duration: 4s;
+}
+.bubbles span:nth-child(40){
+    animation-duration: 4s;
+}
+.bubbles span:nth-child(41){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(42){
+    animation-duration: 15s;
+}
+.bubbles span:nth-child(43){
+    animation-duration: 25s;
+}
+.bubbles span:nth-child(44){
+    animation-duration: 8s;
+}
+.bubbles span:nth-child(45){
+    animation-duration: 12s;
+}
+.bubbles span:nth-child(46){
+    animation-duration: 7s;
+}
+.bubbles span:nth-child(47){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(48){
+    animation-duration: 3s;
+}
+.bubbles span:nth-child(49){
+    animation-duration: 13s;
+}
+.bubbles span:nth-child(50){
+    animation-duration: 6s;
+}
+.bubbles span:nth-child(51){
+    animation-duration: 9s;
+}
+.bubbles span:nth-child(52){
+    animation-duration: 14s;
+}
+.bubbles span:nth-child(53){
+    animation-duration: 7s;
+}
+.bubbles span:nth-child(54){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(55){
+    animation-duration: 4s;
+}
+.bubbles span:nth-child(56){
+    animation-duration: 8s;
+}
+.bubbles span:nth-child(57){
+    animation-duration: 13s;
+}
+.bubbles span:nth-child(58){
+    animation-duration: 6s;
+}
+.bubbles span:nth-child(59){
+    animation-duration: 9s;
+}
+.bubbles span:nth-child(60){
+    animation-duration: 4s;
+}
+.bubbles span:nth-child(61){
+    animation-duration: 7s;
+}
+.bubbles span:nth-child(62){
+    animation-duration: 10s;
+}
+.bubbles span:nth-child(63){
+    animation-duration: 4s;
+}
+.bubbles span:nth-child(64){
+    animation-duration: 8s;
+}
+.bubbles span:nth-child(65){
+    animation-duration: 13s;
+}
+.bubbles span:nth-child(66){
+    animation-duration: 6s;
+}
+.bubbles span:nth-child(67){
+    animation-duration: 9s;
+}
+.bubbles span:nth-child(68){
+    animation-duration: 4s;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(.1);
+    }
+    100%{
+        transform: translateY(-10vh) scale(.7);
+    }
+}

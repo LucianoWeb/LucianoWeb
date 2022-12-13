@@ -1,0 +1,16 @@
+{
+    "header.about" : "Sobre mi",
+    "header.aboutp":"Hola, me llamo Luciano! Hace relativamente poco descubrí el mundo de la programación web y me apasionó. LLevo estudiando esta profesión aproximadamente un año sin descanso. Soy constante, trabajador, disciplinado, me gusta aprender cosas nuevas y aprendo rápido. No tengo experiencia laboral en este sector, pero creo que estoy capacitado para empezar un nuevo camino en mi vida.",
+
+    "nav-pro" :"Proyectos",
+    "nav-pro2" :"Proyectos",
+    "nav-know" :"Conocimientos",
+    "nav-know2" :"Conocimientos",
+    "nav-cont" :"Contacto",
+    "nav-cont2" :"Contacto",
+
+    "know" :"Conocimientos",
+    "pro" :"Proyectos",
+    "cont" : "Encuéntrame en:"
+    
+}
